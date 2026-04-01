@@ -1,0 +1,29 @@
+[api]
+enabled = true
+port = 54321
+
+[auth]
+enabled = true
+
+[storage]
+enabled = true
+
+[functions.search-games]
+verify_jwt = false
+
+[functions.search-cinema]
+verify_jwt = false
+
+[functions.search-music]
+verify_jwt = false
+
+[functions.search-books]
+verify_jwt = false
+
+# ── Required secrets ────────────────────────────────────────────
+# Set these with: supabase secrets set KEY=value
+#
+# TMDB_API_KEY        → https://www.themoviedb.org/settings/api
+# IGDB_CLIENT_ID      → https://dev.twitch.tv/console
+# IGDB_CLIENT_SECRET  → https://dev.twitch.tv/console
+# HARDCOVER_API_KEY   → https://hardcover.app/account/api
